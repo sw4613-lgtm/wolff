@@ -1,0 +1,26 @@
+[
+  {
+    "id": "leaders",
+    "topic": "Reluctant Leaders",
+    "revTitle": "George Washington (1776)",
+    "revProof": "In McCullough's 1776, Washington wasn't a glory-seeker. He doubted his own ability to command an entire army, yet accepted the burden out of duty—holding his freezing men together after devastating defeats in New York.",
+    "exodusTitle": "Moses (Book of Exodus)",
+    "exodusProof": "Moses initially argued that he was 'slow of speech' and unqualified to confront Pharaoh. Yet he stepped forward, confronting the world's greatest empire with nothing but a shepherd's staff and faith."
+  },
+  {
+    "id": "waters",
+    "topic": "Impossible Waters",
+    "revTitle": "Crossing the Delaware River",
+    "revProof": "On Christmas night 1776, during a brutal nor'easter blizzard, Washington ferried 2,400 men, horses, and cannons across an ice-choked river to surprise Hessian forces at Trenton.",
+    "exodusTitle": "Parting of the Red Sea",
+    "exodusProof": "Cornered between Pharaoh's advancing chariots and the sea, the Israelites walked across dry ground while the waters stood like walls on either side—turning certain destruction into liberation."
+  },
+  {
+    "id": "odds",
+    "topic": "Outgunned & Outnumbered",
+    "revTitle": "Farmers vs. The British Empire",
+    "revProof": "McCullough highlights that Washington's army lacked shoes, gunpowder, and uniforms, facing the largest naval armada and best-trained army on Earth—yet succeeded through strategy at Dorchester Heights.",
+    "exodusTitle": "Brickmakers vs. Pharaoh's Chariots",
+    "exodusProof": "Enslaved laborers who spent generations making mud bricks had zero military training or weapons, yet walked out of Egypt carrying the wealth of their former captors."
+  }
+]
