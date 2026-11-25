@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freedom Crossroads Game | Two Roads to Freedom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="mouse-lantern"></div>
+
+  <header class="navbar">
+    <div class="logo">🧭 Two Roads to Freedom</div>
+    <nav>
+      <a href="index.html">← Back to Home</a>
+      <a href="game.html" class="active">Freedom Game</a>
+    </nav>
+  </header>
+
+  <main class="container" style="text-align: center; padding-top: 3rem;">
+    <span class="badge">Interactive Challenge</span>
+    <h1>1776 or Exodus?</h1>
+    <p class="section-intro">Read the historical clue and decide which road to freedom it belongs to!</p>
+
+    <div class="card" style="max-width: 650px; margin: 0 auto;">
+      <p id="score-board" style="color: #e09f3e; font-weight: bold; margin-bottom: 1rem;">Score: 0 / 4</p>
+      <h3 id="question-text" style="min-height: 80px;">Loading clue...</h3>
+      
+      <div style="margin-top: 1.5rem;">
+        <button class="btn-primary" onclick="checkAnswer('1776')">🇺🇸 1776 (American Revolution)</button>
+        <button class="btn-secondary" onclick="checkAnswer('Exodus')">🔥 The Exodus (Egypt)</button>
+      </div>
+
+      <p id="feedback" style="margin-top: 1.5rem; font-weight: bold; min-height: 24px;"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Starter Game Logic (You can add as many questions as you want here!)
+    const questions = [
+      { clue: "An army secretly fortified Dorchester Heights overnight using cannons dragged from Fort Ticonderoga.", answer: "1776" },
+      { clue: "A pillar of cloud by day and fire by night guided a newly freed nation through the wilderness.", answer: "Exodus" },
+      { clue: "Soldiers crossed an ice-filled river on Christmas night to launch a surprise attack at Trenton.", answer: "1776" },
+      { clue: "Ten plagues struck an empire before the ruler finally let the captive people depart.", answer: "Exodus" }
+    ];
+
+    let current = 0;
+    let score = 0;
+
+    function loadQuestion() {
+      if (current < questions.length) {
+        document.getElementById('question-text').textContent = `"${questions[current].clue}"`;
+      } else {
+        document.getElementById('question-text').textContent = `🎉 Journey Complete! You scored ${score} out of ${questions.length}!`;
+      }
+    }
+
+    function checkAnswer(choice) {
+      if (current >= questions.length) return;
+      const feedback = document.getElementById('feedback');
+      
+      if (choice === questions[current].answer) {
+        score++;
+        feedback.style.color = "#4ade80";
+        feedback.textContent = "✅ Correct! Great historical instincts!";
+      } else {
+        feedback.style.color = "#f87171";
+        feedback.textContent = `❌ Not quite! That event happened in ${questions[current].answer}.`;
+      }
+
+      current++;
+      document.getElementById('score-board').textContent = `Score: ${score} / ${questions.length}`;
+      setTimeout(() => {
+        feedback.textContent = "";
+        loadQuestion();
+      }, 1300);
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>
