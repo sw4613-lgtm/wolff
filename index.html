@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two Roads to Freedom | 1776 & The Exodus</title>
+  <!-- Connects your CSS styling file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Interactive Mouse-Follower Glow (Reacts to your cursor!) -->
+  <div id="mouse-lantern"></div>
+
+  <!-- Navigation Bar (Links to your Subpages) -->
+  <header class="navbar">
+    <div class="logo">🧭 Two Roads to Freedom</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="#five-pillars">The 5 Pillars</a>
+      <a href="#proof-explorer">Proof Explorer</a>
+      <a href="game.html" class="nav-btn">Play the Freedom Game →</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">Historical Parallel • David McCullough's 1776 vs. The Exodus</span>
+      <h1>Two Roads to Freedom</h1>
+      <p class="subtitle">
+        Two underdog nations. Two impossible crossings. One timeless struggle against tyranny.
+        Explore how George Washington’s ragtag Continental Army in <strong>1776</strong> mirrored 
+        Moses leading the Israelites out of <strong>Ancient Egypt</strong>.
+      </p>
+      <div class="hero-buttons">
+        <a href="#five-pillars" class="btn-primary">Start the Journey</a>
+        <a href="game.html" class="btn-secondary">Test Your Knowledge (Game)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The 5-Part Introduction Section -->
+  <main class="container">
+    <section id="five-pillars" class="pillars-section">
+      <h2>The Blueprint of Liberation</h2>
+      <p class="section-intro">Every great story of freedom follows five essential steps:</p>
+
+      <div class="pillars-grid">
+        <!-- 1. The way it should be -->
+        <article class="card interactive-card">
+          <div class="card-number">01</div>
+          <h3>The Way It Should Be</h3>
+          <p>
+            Human beings were meant to live free—governed by justice and dignity, not crushed 
+            under the boot of a distant King George III or a ruthless Pharaoh. Freedom is the 
+            natural state of humanity.
+          </p>
+        </article>
+
+        <!-- 2. The way to explain it -->
+        <article class="card interactive-card">
+          <div class="card-number">02</div>
+          <h3>The Way to Explain It</h3>
+          <p>
+            When an empire holds all the weapons, chariots, and trained soldiers, freedom isn't 
+            won by brute strength alone. It is won through unwavering faith, stubborn leadership, 
+            and refusing to quit when everything looks hopeless.
+          </p>
+        </article>
+
+        <!-- 3. Give an example -->
+        <article class="card interactive-card">
+          <div class="card-number">03</div>
+          <h3>Give an Example</h3>
+          <p>
+            <strong>The Impossible Crossing:</strong> In Exodus, trapped against the Red Sea with 
+            Pharaoh’s army closing in, a path opens through the waters. In <em>1776</em>, with his 
+            army freezing and near collapse, Washington crosses the ice-choked Delaware River at 
+            night to turn the tide at Trenton.
+          </p>
+        </article>
+
+        <!-- 4. Bring proofs -->
+        <article class="card interactive-card">
+          <div class="card-number">04</div>
+          <h3>Bring Proofs</h3>
+          <p>
+            David McCullough documents real letters from soldiers starving in rags, outgunned by 
+            British Redcoats, yet holding firm at Dorchester Heights. Likewise, the Exodus narrative 
+            records the ten plagues, the Passover covenant, and the survival of a people against 
+            the world's greatest superpower.
+          </p>
+        </article>
+
+        <!-- 5. Make it fun -->
+        <article class="card interactive-card highlight-card">
+          <div class="card-number">05</div>
+          <h3>Make It Fun!</h3>
+          <p>
+            History isn't dusty textbook pages! Move your mouse across the screen to light your 
+            lantern, click the interactive comparison tabs below, and jump into our 
+            <strong>Crossroads of Freedom</strong> mini-game to see if you could survive both journeys.
+          </p>
+          <a href="game.html" class="inline-link">Launch Interactive Game →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interactive Proof Explorer (Powered by JSON + JavaScript) -->
+    <section id="proof-explorer" class="explorer-section">
+      <h2>Side-by-Side Proof Explorer</h2>
+      <p class="section-intro">Click a category below to compare historical proofs from <em>1776</em> and the Exodus:</p>
+
+      <div class="filter-buttons" id="topic-buttons">
+        <!-- Buttons are generated automatically by script.js using our JSON data! -->
+      </div>
+
+      <div class="comparison-arena" id="comparison-display">
+        <!-- Dynamic comparison cards appear here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for History & Web Design • Inspired by David McCullough’s <em>1776</em> & The Book of Exodus</p>
+  </footer>
+
+  <!-- Connects your JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
